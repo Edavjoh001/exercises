@@ -2,7 +2,6 @@ import pytest
 from exercises.basic import sum_of_digits, binary_string_to_int, count_numbers_and_letters, sum_of_cubes, savings_calculator
 
 
-@pytest.mark.skip('Not yet implemented.')
 def test_sum_of_digits():
     assert sum_of_digits(100) == 1
     assert sum_of_digits(22) == 4
@@ -11,7 +10,6 @@ def test_sum_of_digits():
     assert sum_of_digits(9452388123) == 45
 
 
-@pytest.mark.skip('Not yet implemented.')
 def test_binary_string_to_int():
     assert binary_string_to_int('101') == 5
     assert binary_string_to_int('1101') == 13
@@ -20,7 +18,6 @@ def test_binary_string_to_int():
     assert binary_string_to_int('10000101') == 133
 
 
-@pytest.mark.skip('Not yet implemented.')
 def test_count_numbers_and_letters():
     count = count_numbers_and_letters('test 123')
     assert count['letters'] == 4
@@ -35,7 +32,7 @@ def test_count_numbers_and_letters():
     assert count['numbers'] == 0
 
 
-@pytest.mark.skip('Not yet implemented.')
+
 def test_sum_of_cubes():
     assert sum_of_cubes(4) == 100
     assert sum_of_cubes(1) == 1
@@ -43,6 +40,6 @@ def test_sum_of_cubes():
 
 
 @pytest.mark.skip('Not yet implemented.')
-def test_savings_calculator()
+def test_savings_calculator():
     assert abs(savings_calculator(10000, 200, 0, 5) - 22000) < 0.1
     assert abs(savings_calculator(10000, 200, 6.0, 5) - 27442.51) < 0.1

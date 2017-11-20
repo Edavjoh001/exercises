@@ -1,4 +1,6 @@
-'''Avancerade övningar.'''
+
+"""Avancerade övningar."""
+
 
 def factorial(x):
     '''Faktorisera ett tal.
